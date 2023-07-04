@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  tools-api-server:
+    image: $AND_DOCKER_REGISTRY_NAME/$PROJECT-$APP:$CI_COMMIT_BRANCH
+    container_name: $APP-$CI_COMMIT_BRANCH
+    restart: always
+    ports:
+      - "80:80"

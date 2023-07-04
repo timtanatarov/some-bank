@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./fonts/SFProDisplay-Semibold.woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./fonts/SFProDisplay-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('./fonts/SFProText-Semibold.woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('./fonts/SFProText-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@media screen and (min-width: 640px) {
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: inherit;
+        margin: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2);
+        background-clip: content-box;
+        border-radius: 100vw;
+        border: 2px solid transparent;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 100vw;
+        border: 2px solid transparent;
+        background-clip: content-box;
+    }
+}
+
+* {
+    scrollbar-width: thin;
+}

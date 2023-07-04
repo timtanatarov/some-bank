@@ -1,0 +1,29 @@
+<svg width="260" height="166" viewBox="0 0 260 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9389_156115)">
+<rect x="260" y="166" width="260" height="166" rx="12" transform="rotate(-180 260 166)" fill="url(#paint0_linear_9389_156115)"/>
+<rect x="259" y="165" width="258" height="164" rx="11" transform="rotate(-180 259 165)" stroke="url(#paint1_linear_9389_156115)" stroke-width="2"/>
+<path d="M-5.90097 313.796C-15.0938 314.705 -21.8225 305.321 -18.0126 296.905L152.997 -80.8249C156.807 -89.2403 168.298 -90.3755 173.681 -82.8684L415.3 254.096C420.683 261.603 415.921 272.122 406.728 273.03L-5.90097 313.796Z" fill="url(#paint2_linear_9389_156115)"/>
+<path d="M187.641 144.926C196.833 145.834 203.562 136.451 199.752 128.035L66.6785 -165.901C62.8686 -174.316 51.3776 -175.452 45.9946 -167.944L-142.025 94.2689C-147.408 101.776 -142.645 112.295 -133.453 113.203L187.641 144.926Z" fill="url(#paint3_linear_9389_156115)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_9389_156115" x1="520" y1="166" x2="253.655" y2="321.104" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E3727D"/>
+<stop offset="1" stop-color="#8E54E9"/>
+</linearGradient>
+<linearGradient id="paint1_linear_9389_156115" x1="260" y1="237.858" x2="520.008" y2="248.804" gradientUnits="userSpaceOnUse">
+<stop offset="0.00638632" stop-color="white" stop-opacity="0.32"/>
+<stop offset="1" stop-color="#FBFBFB" stop-opacity="0.37"/>
+</linearGradient>
+<linearGradient id="paint2_linear_9389_156115" x1="-112.743" y1="539.981" x2="342.62" y2="256.374" gradientUnits="userSpaceOnUse">
+<stop stop-color="#850707"/>
+<stop offset="1" stop-color="#E36262" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint3_linear_9389_156115" x1="277.111" y1="325.919" x2="-86.4405" y2="99.4937" gradientUnits="userSpaceOnUse">
+<stop stop-color="#850707"/>
+<stop offset="1" stop-color="#8E54E9" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_9389_156115">
+<rect x="260" y="166" width="260" height="166" rx="12" transform="rotate(-180 260 166)" fill="white"/>
+</clipPath>
+</defs>
+</svg>
