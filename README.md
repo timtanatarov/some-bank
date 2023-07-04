@@ -1,5 +1,8 @@
 ## Available Scripts
 
+##   General Information
+You will not be able to log in to the bank because you need to be connected to the corporate VPN. But you can see the general structure of the files and the approach to writing code.
+
 In the project directory, you can run:
 
 ### `yarn install`
@@ -12,10 +15,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-## Login info
-phone: +79872457777 \
-password: qwaszX1994#
 
 ### `yarn test`
 
