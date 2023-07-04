@@ -1,183 +1,9 @@
-# A-Tink
-
--   [Правила работы с git](#git)
--   [Структура проекта](#structure)
--   [Стандарты разработки](#standards)
-
-# Правила работы с git <a id="git" name="git"></a>
-
-Разработка задач и исправление багов введутся в отдельных ветках.\
-Для обычных задач и багов откалываться от ветки **dev**.\
-
-## Наименование веток
-
--   feat/{id задачи}/{информативное название ветки} - для новых фич
--   bugfix/{id задачи}/{информативное название ветки} - для исправления багов
-
-В названии ветки для пробелов использовать «\_»\
-Пример: feat/ALFAID-551/add_new_libs
-
-## Коммиты
-
-Сообщение для коммита пишется по следующему шаблону:\
-{Тип коммита}: {описание коммита}
-
-Пример: feat: add ui-bootstrap.js dependency
-
-### Типы коммитов
-
--   feat - добавление новой функциональности
--   fix - исправлении багов
--   refactor - рефакторинг кода
--   test - все что связанно с тестами
-
-## Merge requests
-
-После выполнения задачи в отдельной ветке необходимо сделать "Запрос на слияние" (merge request) в ветку dev\
-В описании к мр-у необходимо указать, какие изменения он в себе несет
-
-### Условия для успешного мержа вашего мр-а:
-- Успешный pipline
-- Git конфликты отсутствуют
-- Все треды закрыты
-- Аппрув минимум от одного человека из команды фронтенд разработки
-- Аппрув от техлида
-
-# Структура проекта <a id="structure" name="structure"></a>
-
-### Пример:
-
-```
-src
-├── сomponents
-│   ├── ClientsPage
-│   │    ├── index.tsx      // Код компонента ClientsPage
-│   │    ├── Search.tsx
-│   │    └── Table
-│   │        ├── index.tsx
-│   │        ├── Head.tsx
-│   │        └── Body.tsx
-│   └── ClientCreatePage
-│       ├── index.tsx
-│       ├── constants.ts    // Константные значения для компонента CreateClientPage
-│       └── utils.ts        // Функции для компонента CreateClientPage
-│
-├── shared                  // Переиспользуемые компоненты
-│   ├── icons
-│   │   ├── Close.tsx
-│   │   └── Phone.tsx
-│   ├── Avatar.tsx
-│   ├── Input.tsx
-│   └── Button.tsx
-|
-├── constants               // Глобальные константые значения
-├── images
-├── services
-├── redux
-├── utils                   // Общие вспомогательные функции
-├── hooks
-│
-```
-
----
-
-# Стандарты разработки <a id="standards" name="standards"></a>
-
-## Общие правила наименований:
-
-#### Названия файлов и папок должны быть уникальными относительно их родительской папки
-
-❌ Примеры **неправильного** кода для этого правила:
-
-```
-components
-├──Users
-│  ├──index.tsx
-│  ├──UsersTable.tsx
-│  └──UsersFilters.tsx
-├──utils
-│  └──sortUtil.ts
-```
-
-✅ Примеры **правильного** кода для этого правила:
-
-```
-components
-├──Users
-│  ├──index.tsx
-│  ├──Table.tsx
-│  └──Filters.tsx
-├──utils
-│  └──sort.ts
-```
-
----
-
-#### Названия компонент должны быть уникальными относительно всего проекта
-
-❌ Примеры **неправильного** кода для этого правила:
-
-```tsx
-  // ./components/Users/Table.tsx
-
-  export const Table = (props) => ...
-```
-
-✅ Примеры **правильного** кода для этого правила:
-
-```tsx
-  // ./components/Users/Table.tsx
-
-  export const UsersTable = (props) => ...
-```
-
-## Наименование обработчиков
-
--   Функии обработчики должны называться по типу `handleClick`
--   Свойства (props) принимающие обработчики должны называться по типу `onClick`
-
-**Пример:**
-
-```tsx
-  type ConfirmModalProps = {
-    isOpen: boolean;
-    onConfirm: () => {} // Свойство принимающее обработчик
-    onCancel: () => {} // Свойство принимающее обработчик
-  }
-
-  const ConfirmModal: FC<ConfirmModalProps> = ({ isOpen, onConfirm, onCancel }) => {
-    return (
-      <Modal isOpen={isOpen}>
-        {/* Some code */}
-        <Button onClick={onConfirm}>Confirm</Button>
-        <Button onClick={onCancel}>Cancel</Button>
-      </Modal>
-    )
-  }
-
-  const MyComponent = () => {
-    const [isOpenConfirmModal, setIsOpenConfirmModal] = useState(false);
-
-    // Функции обработчики
-    const handleConfirm = () => { /* Some code */ };
-    const handleCancel = () => { /* Some code */ };
-
-    return (
-      <div>
-        {/* Some code */}
-        <ConfirmModal
-          isOpen={isOpenConfirmModal}
-          onConfirm={handleConfirm}
-          onCancel={handleCancel}
-        >
-      </div>
-    )
-  }
-```
-
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn install`
+Installing all necessary dependencies.
 
 ### `yarn start`
 
@@ -186,6 +12,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+## Login info
+phone: +79872457777 \
+password: qwaszX1994#
 
 ### `yarn test`
 
